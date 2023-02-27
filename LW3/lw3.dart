@@ -146,17 +146,21 @@ void main() async {
   print("\n");
 
   // 4-5. Async, Future
+  print("FUTURE: ");
   var result = await getFutureData();
   print(result);
   print("\n");
 
   // 6. Stream, Single
+  print("STREAMS: ");
   var subscription1 = getStreamData().listen((data) => print(data));
   subscription1.onDone(() => print('Done!'));
 
   var subscription2 = getSingleStreamData().listen((data) => print(data));
   subscription2.onDone(() => print('Done!'));
 
-  var subscription3 = getBroadcastData().listen((data) => print('Subscription 3: $data'));
-  var subscription4 = getBroadcastData().listen((data) => print('Subscription 4: $data'));
+  var subscription3 =
+      getBroadcastData().listen((data) => print('Subscription 3: $data'));
+  var subscription4 =
+      getBroadcastData().listen((data) => print('Subscription 4: $data'));
 }
