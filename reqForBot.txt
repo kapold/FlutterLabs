@@ -1,0 +1,11 @@
+Use Flutter.
+
+1. Create an app in Firebase using an entity
+class Developer {
+   stringname;
+   String position;
+   Developer(this.name, this.position);
+}
+2. Implement authentication in the application using Firebase Authentication
+3. Store used data in app in Firebase Firestore
+4. Implement Firebase Messaging
