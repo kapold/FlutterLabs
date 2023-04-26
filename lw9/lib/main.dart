@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter BLoC',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: BlocProvider(
         create: (context) => CounterBloc(),
-        child: const CounterPage(),
+        child: const CounterPage()
       ),
       debugShowCheckedModeBanner: false
     );
